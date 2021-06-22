@@ -9,7 +9,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 // import SquareScreen from './src/screens/SquareScreen'
 // import TextScreen from './src/screens/TextScreen'
 // import BoxScreen from './src/screens/BoxScreen'
-
+import Main from './src/Swipe/main';
 
 const navigator = createStackNavigator(
   {
@@ -22,9 +22,11 @@ const navigator = createStackNavigator(
     // Square: SquareScreen,
     // Text: TextScreen,
     // Box: BoxScreen
+
+    Main: Main
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Main",
     defaultNavigationOptions: {
       title: "App"
     }
