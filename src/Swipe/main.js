@@ -2,8 +2,8 @@ import Expo from 'expo';
 import React from 'react';
 import { StyleSheet, Text, View, } from 'react-native';
 import { Card, Button } from 'react-native-elements';
-// import Deck from './src/Deck';
-import Ball from './BallScreen';
+import Deck from './src/Deck';
+// import Ball from './BallScreen';
 
 const DATA = [
     { id: 1, text: 'Card #1', uri: 'http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-04.jpg' },
@@ -53,12 +53,12 @@ const App = () => {
 
     return (
         <View style={styles.container}>
-            <Ball />
-            {/* <Deck
+            {/* <Ball /> */}
+            <Deck
                     data={DATA}
                     renderCard={renderCard}
                     renderNoMoreCards={renderNoMoreCards}
-                /> */}
+                />
         </View>
     );
 
